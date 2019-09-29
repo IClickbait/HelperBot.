@@ -1,11 +1,10 @@
 const discord = require("discord.js");
 const client = new discord.Client({disableEveryone: true}); 
-const config = require('./botconfig.json');
 const { Client, RichEmbed } = require("discord.js");
 
 var userTickets = new Map();
 
-client.login(config.token);
+client.login(token);
 
 client.on('ready', () => {
     console.log(client.user.username + " has logged in.");
